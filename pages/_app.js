@@ -1,5 +1,6 @@
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import Page from '../components/Page';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -15,10 +16,11 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-
-      <Page>
-        <Component {...pageProps} />
-      </Page>
+      <ParallaxProvider>
+        <Page>
+          <Component {...pageProps} />
+        </Page>
+      </ ParallaxProvider>
     );
   }
 }
