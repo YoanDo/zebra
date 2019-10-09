@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled, { keyframes } from 'styled-components';
 
 const appear = keyframes`
   0% {
@@ -7,7 +7,7 @@ const appear = keyframes`
   100% {
     opacity: 1;
   }
-`
+`;
 
 export const HeaderWrap = styled.div`
   width: 100%;
@@ -21,5 +21,5 @@ export const HeaderWrap = styled.div`
     animation-delay: .4s;
       animation-fill-mode: forwards;
   }
-`
+`;
 

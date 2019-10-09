@@ -4,6 +4,7 @@ import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Meta from '../components/Meta';
 
 
+
 // variables
 const theme = {
   black: '#393939',
@@ -11,7 +12,9 @@ const theme = {
   lightGrey: '#E1E1E1',
   offWhite: '#EDEDED',
   maxWidth: '1000px',
-  basicText: '1.4rem',
+  basicFS: '1.2rem',
+  bigFS: '1.8rem',
+  titleFS: '6.075rem'
 };
 
 const StyledPage = styled.div`
@@ -25,6 +28,20 @@ const Inner = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Brandon Grotesk';
+    src: url('static/brandon_grotesk_blk.woff2') format('woff2');
+    font-weight: black;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Brandon Grotesk';
+    src: url('static/brandon_grotesk_bld.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+
   html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -45,6 +62,17 @@ const GlobalStyle = createGlobalStyle`
   a{
     text-decoration: none;
     color: ${theme.black};
+  }
+  h1{
+    font-size: ${theme.titleFS};
+    font-family: 'Brandon Grotesk';
+    text-transform: uppercase;
+  }
+  h3{
+    font-size: ${theme.bigFS};
+    font-family: 'Brandon Grotesk';
+    font-weight: bold;
+    text-transform: uppercase;
   }
 `
 class Page extends Component {
