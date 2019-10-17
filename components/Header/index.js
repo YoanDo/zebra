@@ -1,7 +1,7 @@
 import {
   HeaderWrap,
 } from './styles'
-import logoImg from './resources/logo.png'
+import logoImg from './resources/logo_753.svg'
 
 const Header = () => (
   <HeaderWrap>
