@@ -15,6 +15,7 @@ export const Illustrations = styled.div`
   margin-right: 30px;
   .line{
     opacity: .9;
+    background: ${props => props.theme.black};
   }
 `;
 

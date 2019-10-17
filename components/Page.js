@@ -7,14 +7,16 @@ import Meta from '../components/Meta';
 
 // variables
 const theme = {
-  black: '#393939',
+  black: '#2B2B2A',
   grey: '#3A3A3A',
   lightGrey: '#E1E1E1',
   offWhite: '#EDEDED',
   maxWidth: '1000px',
   basicFS: '1.2rem',
-  bigFS: '1.8rem',
-  titleFS: '6.075rem'
+  largeFS: '1.8rem',
+  largerFS: '4.05rem',
+  titleFS: '6.075rem',
+  spaceTopBlock: '10vh',
 };
 
 const StyledPage = styled.div`
@@ -58,6 +60,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.2rem;
     line-height: 2;
     font-family: 'Space Mono', monospace;
+    background-color: #F2F2F2
   }
   a{
     text-decoration: none;
@@ -68,8 +71,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Brandon Grotesk';
     text-transform: uppercase;
   }
+  h2{
+    font-size: ${theme.largerFS}
+  }
   h3{
-    font-size: ${theme.bigFS};
+    font-size: ${theme.largeFS};
     font-family: 'Brandon Grotesk';
     font-weight: bold;
     text-transform: uppercase;
