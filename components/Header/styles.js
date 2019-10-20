@@ -1,13 +1,4 @@
-import styled, { keyframes } from 'styled-components';
-
-const appear = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
+import styled from 'styled-components';
 
 export const HeaderWrap = styled.div`
   width: 100%;
@@ -16,10 +7,15 @@ export const HeaderWrap = styled.div`
   align-items: center;
   justify-content: center;
   img{
-    opacity: 0;
-    animation: ${appear} 2s ease-in-out;
-    animation-delay: .4s;
-      animation-fill-mode: forwards;
+    max-width: 30vw;
+  }
+  @media (max-width: 980px){
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    img{
+      width: 80%;
+    }
   }
 `;
 

@@ -11,4 +11,8 @@ export const FooterWrap = styled.div`
   width: 100%;
   border-top: 0.2rem solid ${props => props.theme.black};
   border-bottom: 0.2rem solid ${props => props.theme.black};
+  @media (max-width: 980px){
+    flex-direction: column;
+  }
 `;
+

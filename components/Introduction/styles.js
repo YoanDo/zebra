@@ -6,6 +6,9 @@ export const IntroductionWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 980px){
+    height: auto;
+  }
 `;
 export const Illustrations = styled.div`
   height: 100%;
@@ -17,12 +20,19 @@ export const Illustrations = styled.div`
     opacity: .9;
     background: ${props => props.theme.black};
   }
+  @media (max-width: 980px){
+    display: none;
+  }
 `;
 
 
 export const TextWrap = styled.div`
   font-size: ${props => props.theme.basicText};
   flex-basis: 50%;
+  @media (max-width: 980px){
+    width: 100%;
+    flex-basis: 100%;
+  }
 `;
 
 

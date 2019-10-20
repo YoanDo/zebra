@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import {
   ArtistsWrap,
@@ -22,7 +22,7 @@ const Artists = () => {
       <h1>artists</h1>
       <ul>
         {artists.map((artist, index) =>
-          <Artist href={artist.website} target='_blank' x={getRandomInt(40)}>
+          <Artist href={artist.website} target='_blank' x={getRandomInt(40)} key={index}>
             <li>
               <p>{`0${index + 1}`}</p> -
               <h2>{artist.name}</h2>

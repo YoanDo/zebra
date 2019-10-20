@@ -20,6 +20,7 @@ export const Artist = styled.a`
     max-height: 40vh;
     display: none;
     left: ${props => props.x}%;
+    border: 10px white solid;
   }
   li{
     position: relative;

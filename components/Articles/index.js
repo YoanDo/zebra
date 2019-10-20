@@ -24,11 +24,10 @@ export default function AllPosts() {
   return (
     <ArticlesWrap>
       <h1>actus</h1>
-      {console.log(data)}
       <Articles>
         {
-          data.map(post =>
-            <Article>
+          data.map((post, index) =>
+            <Article key={index}>
               <Illustration src={post.acf.image} alt={post.post_title} />
               <TextArea>
                 <Title>

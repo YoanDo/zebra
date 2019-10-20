@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-// import Header from '../components/Header';
+import styled, { ThemeProvider, createGlobalStyle, keyframes } from 'styled-components';
 import Meta from '../components/Meta';
 
-
-
+const appear = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 // variables
 const theme = {
   black: '#2B2B2A',
@@ -48,7 +53,20 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     box-sizing: border-box;
     color: ${theme.black};
+    @media (max-width:980px) {
+      font-size: 30%;
+    }
+    opacity: 0;
+    animation: ${appear} 2s ease-in-out;
+    animation-delay: .4s;
+    animation-fill-mode: forwards;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -59,7 +77,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.2rem;
     line-height: 2;
     font-family: 'Space Mono', monospace;
-    background-color: #F2F2F2
+    background-color: #F2F2F2;
+     @media (max-width:980px) {
+       font-size: 2.2rem !important;
+     }
   }
   a{
     text-decoration: none;
