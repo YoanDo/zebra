@@ -19,6 +19,9 @@
     "react-scroll-parallax": "^2.2.0",
     "styled-components": "^4.4.0"
   },
+  "engines": {
+    "node": "10.16.0"
+  },
   "babel": {
     "env": {
       "development": {
