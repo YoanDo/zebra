@@ -10,6 +10,7 @@ const appear = keyframes`
     opacity: 1;
   }
 `;
+
 // variables
 const theme = {
   black: '#2B2B2A',
@@ -49,6 +50,13 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Space Mono';
+    src: url('static/space-mono-normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -71,7 +79,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
   body{
-    @import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
     padding:0;
     margin: 0;
     font-size: 1.2rem;
@@ -93,6 +100,7 @@ const GlobalStyle = createGlobalStyle`
   }
   h2{
     font-size: ${theme.largerFS}
+    font-family: 'Space Mono', monospace;
   }
   h3{
     font-size: ${theme.largeFS};
