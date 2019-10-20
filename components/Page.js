@@ -48,7 +48,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     box-sizing: border-box;
     color: ${theme.black};
-    height: 1200vh; //todo
   }
   *, *:before, *:after {
     box-sizing: inherit;

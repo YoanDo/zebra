@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Introduction from '../components/Introduction'
 import Articles from '../components/Articles'
 import Artists from '../components/Artists'
+import Footer from '../components/Footer'
 // import Link from 'next/link'
 
 
@@ -12,6 +13,7 @@ const Home = () => (
     <Introduction />
     <Articles />
     <Artists />
+    <Footer />
   </Fragment>
 )
 
