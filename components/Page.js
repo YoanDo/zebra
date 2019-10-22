@@ -14,9 +14,7 @@ const appear = keyframes`
 // variables
 const theme = {
   black: '#2B2B2A',
-  grey: '#3A3A3A',
-  lightGrey: '#E1E1E1',
-  offWhite: '#EDEDED',
+  offWhite: '#F2F2F2',
   maxWidth: '1000px',
   basicFS: '1.2rem',
   largeFS: '1.8rem',
@@ -84,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.2rem;
     line-height: 2;
     font-family: 'Space Mono', monospace;
-    background-color: #F2F2F2;
+    background-color: ${theme.offwhite};
      @media (max-width:980px) {
        font-size: 2.2rem !important;
      }

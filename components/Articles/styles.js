@@ -45,17 +45,23 @@ export const Article = styled.div`
 
 
 `;
-export const Illustration = styled.img`
+export const Illustration = styled.div`
   height: 192px;
   width: 274px;
-  object-fit: cover;
+  background-image: url("${props => props.background}");
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  flex-basis: 40%;
   @media (max-width: 980px){
-
-  }
+    flex-basis: 100%;
+   }
 `;
 export const TextArea = styled.div`
   margin-left: 3.8rem;
+   flex-basis: 60%;
    @media (max-width: 980px){
      margin-left: 0;
+     flex-basis: 100%;
    }
 `;

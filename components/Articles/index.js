@@ -28,7 +28,7 @@ export default function AllPosts() {
         {
           data.map((post, index) =>
             <Article key={index}>
-              <Illustration src={post.acf.image} alt={post.post_title} />
+                <Illustration background={post.acf.image} alt={post.post_title} />
               <TextArea>
                 <Title>
                   <h3>{post.post_title}</h3>-

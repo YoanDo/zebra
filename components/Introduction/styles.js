@@ -25,7 +25,6 @@ export const Illustrations = styled.div`
   }
 `;
 
-
 export const TextWrap = styled.div`
   font-size: ${props => props.theme.basicText};
   flex-basis: 50%;
@@ -35,5 +34,9 @@ export const TextWrap = styled.div`
   }
 `;
 
-
+export const Rectangle = styled.div`
+  height: 270px;
+  width: 27px;
+  background-color: ${props => props.theme.black}
+`
 

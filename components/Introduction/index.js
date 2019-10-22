@@ -3,11 +3,11 @@ import { Parallax } from 'react-scroll-parallax';
 import {
   IntroductionWrap,
   Illustrations,
-  TextWrap
+  TextWrap,
+  Rectangle
 } from './styles'
 import concrete1 from './resources/concrete_1.png'
 import concrete2 from './resources/concrete_2.png'
-import line from './resources/line.png'
 
 const Introduction = () => (
   <IntroductionWrap>
@@ -19,7 +19,7 @@ const Introduction = () => (
         <img src={concrete2} alt="" />
       </Parallax>
       <Parallax y={[-220, -80]} x={[10, 10]} >
-        <img src={line} alt="" className="line" />
+        <Rectangle />
       </Parallax>
     </Illustrations>
     <TextWrap>
